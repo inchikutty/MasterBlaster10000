@@ -1,0 +1,61 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>masterblaster</title>
+        <meta name="description" content="">
+        <!--meta http-equiv="refresh" content="0; url=http://localhost:9000/"-->
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li><a  href="#">Refresh</a></li>
+                    <li><a  href="http://localhost:9000/">Logout</a></li>
+                </ul>
+                <h3 class="text-muted">Master Blaster 10000</h3>
+            </div>
+
+        </div>
+        <script src="bower_components/jquery/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/phaser/build/phaser.min.js"></script>
+        <!-- Begin VanillaJS Modules -->
+        <script src="scripts/modules/score_timer.js"></script>
+        <script src="scripts/modules/game.js"></script>
+        <script src="scripts/modules/user.js"></script>
+        <script src="scripts/modules/timer.js"></script>
+		<!-- End VanillaJS Modules -->
+        <script src="scripts/main.js"></script>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 jumbotron">
+              <div id= "timer">
+                <center><img src="images/timer.png"></img><br/>
+                  <h2 id="counter"></h2></center>
+              </div>
+              <div>
+                <div id="score_board" ></div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div id="game" class="jumbotron">
+                <div id="canvas"></div>
+                <span id="score"></span>
+              </div>
+            </div>
+          </div>
+          <!--center>
+            <div id="canvas">
+            </div>
+          </center-->
+        </div>
+          <div class="footer">
+               <p>&copy; Comp 680 Project by Team 7</p>
+          </div>
+</body>
+</html>
